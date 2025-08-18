@@ -43,10 +43,10 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <button 
-            onClick={() => scrollToSection('hero')}
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="flex items-center gap-2 group"
           >
-            <div className="w-8 h-8 gradient-primary rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 gradient-primary rounded-lg flex items-center justify-center shadow-soft">
               <span className="text-primary-foreground font-bold text-sm">DO</span>
             </div>
             <span className="font-bold text-lg gradient-primary bg-clip-text text-transparent group-hover:scale-105 transition-transform duration-200">
@@ -55,14 +55,16 @@ const Header = () => {
           </button>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-8" role="navigation" aria-label="Main navigation">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="text-muted-foreground hover:text-primary transition-colors duration-200 text-sm font-medium"
+                className="text-muted-foreground hover:text-primary transition-colors duration-200 text-sm font-medium relative group"
+                aria-label={`Navigate to ${item.name} section`}
               >
                 {item.name}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
               </button>
             ))}
           </nav>

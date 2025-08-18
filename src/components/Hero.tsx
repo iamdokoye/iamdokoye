@@ -51,6 +51,7 @@ const Hero = () => {
                 size="lg" 
                 onClick={() => scrollToSection('contact')}
                 className="group border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                aria-label="Navigate to contact section"
               >
                 Connect with Me
                 <Download className="ml-2 h-5 w-5 transition-transform group-hover:translate-y-1" />
@@ -79,10 +80,12 @@ const Hero = () => {
             <div className="relative">
               <img 
                 src={heroIllustration} 
-                alt="DevSecOps Engineering Illustration" 
+                alt="DevSecOps engineering illustration showing cloud security, automation, and infrastructure" 
                 className="w-full h-auto rounded-2xl shadow-strong"
+                loading="eager"
+                decoding="async"
               />
-              <div className="absolute inset-0 bg-gradient-hero opacity-20 rounded-2xl"></div>
+              <div className="absolute inset-0 bg-gradient-hero opacity-20 rounded-2xl" aria-hidden="true"></div>
             </div>
           </div>
         </div>
