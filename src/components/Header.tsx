@@ -49,7 +49,7 @@ const Header = () => {
             <div className="w-8 h-8 gradient-primary rounded-lg flex items-center justify-center shadow-soft">
               <span className="text-primary-foreground font-bold text-sm">DO</span>
             </div>
-            <span className="font-bold text-lg gradient-primary bg-clip-text text-transparent group-hover:scale-105 transition-transform duration-200">
+            <span className="font-bold text-lg text-gradient-primary group-hover:scale-105 transition-transform duration-200">
               Daniel Okoye
             </span>
           </button>

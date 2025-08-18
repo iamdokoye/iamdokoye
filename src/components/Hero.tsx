@@ -23,7 +23,7 @@ const Hero = () => {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 <span className="text-foreground">Daniel Okoye</span>
                 <br />
-                <span className="gradient-primary bg-clip-text text-transparent">
+                <span className="text-gradient-primary">
                   DevSecOps Engineer
                 </span>
                 <br />
@@ -61,15 +61,15 @@ const Hero = () => {
             {/* Quick stats */}
             <div className="flex flex-wrap gap-8 pt-8 border-t border-border/50">
               <div className="text-center">
-                <div className="text-2xl font-bold gradient-primary bg-clip-text text-transparent">5+</div>
+                <div className="text-2xl font-bold text-primary">5+</div>
                 <div className="text-sm text-muted-foreground">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold gradient-primary bg-clip-text text-transparent">50+</div>
+                <div className="text-2xl font-bold text-primary">50+</div>
                 <div className="text-sm text-muted-foreground">Projects Delivered</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold gradient-primary bg-clip-text text-transparent">3</div>
+                <div className="text-2xl font-bold text-primary">3</div>
                 <div className="text-sm text-muted-foreground">Cloud Platforms</div>
               </div>
             </div>

@@ -6,7 +6,7 @@ const LoadingSpinner = () => {
           <span className="text-primary-foreground font-bold text-xl">DO</span>
         </div>
         <div className="space-y-2">
-          <h2 className="text-xl font-semibold gradient-primary bg-clip-text text-transparent">
+          <h2 className="text-xl font-semibold text-gradient-primary">
             Daniel Okoye
           </h2>
           <p className="text-sm text-muted-foreground animate-pulse">

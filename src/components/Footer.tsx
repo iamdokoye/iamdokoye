@@ -46,7 +46,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Branding */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold gradient-primary bg-clip-text text-transparent">
+            <h3 className="text-xl font-bold text-gradient-primary">
               Daniel Okoye
             </h3>
             <p className="text-muted-foreground leading-relaxed">

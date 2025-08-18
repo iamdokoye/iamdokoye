@@ -59,7 +59,7 @@ const Experience = () => {
             Professional Experience
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            My <span className="gradient-primary bg-clip-text text-transparent">Career Journey</span>
+            My <span className="text-gradient-primary">Career Journey</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Over 5 years of progressive experience in DevOps, security, and backend development, 

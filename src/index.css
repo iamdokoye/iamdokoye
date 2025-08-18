@@ -8,15 +8,15 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Core brand colors */
+    /* Core brand colors - all HSL values */
     --background: 0 0% 100%;
-    --foreground: 0 0% 15%;
+    --foreground: 0 0% 9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 15%;
+    --card-foreground: 0 0% 9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 15%;
+    --popover-foreground: 0 0% 9%;
 
     /* Deep Royal Purple primary */
     --primary: 270 67% 30%;
@@ -25,12 +25,12 @@ All colors MUST be HSL.
 
     /* Metallic Gold accent */
     --accent: 45 100% 51%;
-    --accent-foreground: 0 0% 15%;
+    --accent-foreground: 0 0% 9%;
     --accent-hover: 45 100% 45%;
 
     /* Silver secondary */
-    --secondary: 0 0% 75%;
-    --secondary-foreground: 0 0% 15%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 9%;
 
     /* Charcoal grey muted */
     --muted: 0 0% 96%;
@@ -74,35 +74,35 @@ All colors MUST be HSL.
 
   .dark {
     /* Dark mode with purple theme */
-    --background: 0 0% 8%;
+    --background: 0 0% 4%;
     --foreground: 0 0% 95%;
 
-    --card: 0 0% 10%;
+    --card: 0 0% 6%;
     --card-foreground: 0 0% 95%;
 
-    --popover: 0 0% 10%;
+    --popover: 0 0% 6%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 270 67% 40%;
+    --primary: 270 67% 50%;
     --primary-foreground: 0 0% 98%;
-    --primary-hover: 270 67% 35%;
+    --primary-hover: 270 67% 45%;
 
     --accent: 45 100% 55%;
-    --accent-foreground: 0 0% 15%;
+    --accent-foreground: 0 0% 9%;
     --accent-hover: 45 100% 50%;
 
-    --secondary: 0 0% 20%;
+    --secondary: 0 0% 15%;
     --secondary-foreground: 0 0% 90%;
 
-    --muted: 0 0% 15%;
+    --muted: 0 0% 10%;
     --muted-foreground: 0 0% 65%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 270 67% 40%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 270 67% 50%;
     
     /* Dark gradients */
     --gradient-primary: linear-gradient(135deg, hsl(270 67% 40%), hsl(270 67% 35%));
@@ -139,6 +139,22 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
+  .text-gradient-primary {
+    background: linear-gradient(135deg, hsl(270 67% 30%), hsl(45 100% 51%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  
+  .dark .text-gradient-primary {
+    background: linear-gradient(135deg, hsl(270 67% 50%), hsl(45 100% 55%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  
   .gradient-primary {
     background: var(--gradient-primary);
   }

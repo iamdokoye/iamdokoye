@@ -77,7 +77,7 @@ const Contact = () => {
             Get In Touch
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Let's Build Something <span className="gradient-primary bg-clip-text text-transparent">Secure & Scalable</span>
+            Let's Build Something <span className="text-gradient-primary">Secure & Scalable</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Whether you're looking to enhance your infrastructure security, optimize your DevOps processes, 
