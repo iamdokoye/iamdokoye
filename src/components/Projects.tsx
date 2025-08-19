@@ -10,7 +10,7 @@ const Projects = () => {
       description: "Reusable AWS infrastructure modules with security best practices, automated compliance checks, and cost optimization. Includes VPC, EKS, RDS, and security group configurations.",
       image: "🏗️",
       technologies: ["Terraform", "AWS", "Security", "IaC", "CI/CD"],
-      githubUrl: "https://github.com/dokoye",
+      githubUrl: "https://github.com/iamdokoye/terraform-aws-modules",
       liveUrl: "",
       featured: true
     },
@@ -19,7 +19,7 @@ const Projects = () => {
       description: "Open-source project integrating RBAC policies, container scanning with Trivy, runtime security with Falco, and automated CI/CD security gates for Kubernetes clusters.",
       image: "🔒",
       technologies: ["Kubernetes", "Falco", "Trivy", "RBAC", "Security", "Go"],
-      githubUrl: "https://github.com/dokoye",
+      githubUrl: "https://github.com/iamdokoye/k8s-security-automation",
       liveUrl: "",
       featured: true
     },
@@ -28,7 +28,7 @@ const Projects = () => {
       description: "Full-stack application with role-based access control supporting students, teachers, and administrators. Features course management, grading, and real-time notifications.",
       image: "🎓",
       technologies: ["Node.js", "Next.js", "PostgreSQL", "TypeScript", "Python"],
-      githubUrl: "https://github.com/dokoye",
+      githubUrl: "https://github.com/iamdokoye/student-management-system",
       liveUrl: "",
       featured: false
     },
@@ -37,7 +37,7 @@ const Projects = () => {
       description: "Blockchain-backed decentralized file storage platform using IPFS for distributed storage, smart contracts for access control, and Go microservices for backend operations.",
       image: "🔗",
       technologies: ["IPFS", "Golang", "Solidity", "Blockchain", "Smart Contracts"],
-      githubUrl: "https://github.com/dokoye",
+      githubUrl: "https://github.com/iamdokoye/decentra-store",
       liveUrl: "",
       featured: false
     }
@@ -132,7 +132,7 @@ const Projects = () => {
           <Button 
             variant="outline" 
             className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-            onClick={() => window.open('https://github.com/dokoye', '_blank')}
+            onClick={() => window.open('https://github.com/iamdokoye', '_blank')}
           >
             <Github className="mr-2 h-4 w-4" />
             View All Projects on GitHub

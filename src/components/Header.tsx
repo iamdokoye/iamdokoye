@@ -35,8 +35,8 @@ const Header = () => {
     <header 
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-background/80 backdrop-blur-md border-b border-border/50 shadow-soft' 
-          : 'bg-transparent'
+          ? 'bg-background/95 backdrop-blur-md border-b border-border/50 shadow-soft' 
+          : 'bg-background/90 backdrop-blur-sm'
       }`}
     >
       <div className="container mx-auto px-6 lg:px-8">
@@ -111,7 +111,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden border-t border-border/50 bg-background/95 backdrop-blur-md">
+          <div className="md:hidden border-t border-border/50 bg-background/98 backdrop-blur-md shadow-lg">
             <nav className="py-4 space-y-2">
               {navItems.map((item) => (
                 <button

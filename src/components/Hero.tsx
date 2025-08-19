@@ -9,29 +9,29 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-background via-background to-muted/20">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-background via-background to-muted/20 pt-16 px-4 sm:px-6 lg:px-8">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-hero opacity-5"></div>
       <div className="absolute top-20 right-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float"></div>
       <div className="absolute bottom-20 left-20 w-64 h-64 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
       
-      <div className="container mx-auto px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto relative z-10 max-w-7xl">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[calc(100vh-8rem)]">
           {/* Text content */}
           <div className="space-y-8 animate-fade-in-up">
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 <span className="text-foreground">Daniel Okoye</span>
                 <br />
                 <span className="text-gradient-primary">
                   DevSecOps Engineer
                 </span>
                 <br />
-                <span className="text-muted-foreground text-3xl md:text-4xl lg:text-5xl">
+                <span className="text-muted-foreground text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
                   & Backend Developer
                 </span>
               </h1>
-              <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed">
+              <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl leading-relaxed">
                 Building secure, automated, and scalable systems that power the future of technology.
               </p>
             </div>
