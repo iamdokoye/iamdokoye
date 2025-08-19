@@ -14,7 +14,6 @@ import {
   BarChart3,
   Target
 } from "lucide-react";
-import { useState } from "react";
 
 const CaseStudies = () => {
   const caseStudies = [

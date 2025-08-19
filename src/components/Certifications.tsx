@@ -174,7 +174,7 @@ const Certifications = () => {
           <h3 className="text-2xl font-bold mb-8">Current Certifications</h3>
           <div className="grid md:grid-cols-2 gap-6">
             {certifications.map((cert) => (
-              <Card key={cert.id} className="shadow-medium border-2 border-border/50">
+              <Card key={cert.id} className={`shadow-medium border-2 ${cert.color}`}>
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <div className="flex items-center gap-3">
