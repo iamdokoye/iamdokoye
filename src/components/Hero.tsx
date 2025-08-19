@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download } from "lucide-react";
-import heroIllustration from "@/assets/hero-illustration.jpg";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -78,13 +77,13 @@ const Hero = () => {
           {/* Hero image */}
           <div className="relative animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
             <div className="relative">
-              <img 
-                src={heroIllustration} 
-                alt="DevSecOps engineering illustration showing cloud security, automation, and infrastructure" 
-                className="w-full h-auto rounded-2xl shadow-strong"
-                loading="eager"
-                decoding="async"
-              />
+              <div className="w-full h-96 bg-gradient-hero rounded-2xl shadow-strong flex items-center justify-center">
+                <div className="text-center text-primary-foreground">
+                  <div className="text-6xl mb-4">🔒</div>
+                  <h3 className="text-xl font-semibold">DevSecOps</h3>
+                  <p className="text-sm opacity-90">Security • Automation • Scale</p>
+                </div>
+              </div>
               <div className="absolute inset-0 bg-gradient-hero opacity-20 rounded-2xl" aria-hidden="true"></div>
             </div>
           </div>
