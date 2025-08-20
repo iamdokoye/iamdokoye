@@ -340,7 +340,10 @@ const CiCdPipeline = () => {
           <Card className="shadow-medium border-primary/20 bg-gradient-to-r from-primary/5 to-accent/5">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <pipelineSteps[currentStep].icon className="h-5 w-5 text-primary" />
+                {(() => {
+                  const IconComponent = pipelineSteps[currentStep].icon;
+                  return <IconComponent className="h-5 w-5 text-primary" />;
+                })()}
                 Currently Running: {pipelineSteps[currentStep].title}
               </CardTitle>
             </CardHeader>

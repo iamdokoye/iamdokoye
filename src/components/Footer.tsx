@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import { Github, Linkedin, Mail, ArrowUp } from "lucide-react";
 
 const Footer = () => {
@@ -103,6 +104,37 @@ const Footer = () => {
               </p>
             </div>
           </div>
+        </div>
+
+        {/* Call to Action */}
+        <div className="border-t border-border/50 pt-8 mb-8">
+          <Card className="shadow-medium border-primary/20 bg-gradient-to-r from-primary/5 to-accent/5">
+            <CardContent className="p-8 text-center">
+              <h3 className="text-2xl font-bold mb-4">
+                Looking for a DevSecOps Engineer to secure and scale your systems?
+              </h3>
+              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+                I specialize in building secure, scalable infrastructure with automated security 
+                practices that protect your applications while enabling rapid development.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button 
+                  className="flex items-center gap-2"
+                  onClick={() => scrollToSection('contact')}
+                >
+                  <Mail className="h-4 w-4" />
+                  Let's Talk
+                </Button>
+                <Button 
+                  variant="outline" 
+                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                  onClick={() => scrollToSection('projects')}
+                >
+                  View My Work
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
         </div>
 
         {/* Bottom section */}

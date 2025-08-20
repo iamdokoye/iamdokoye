@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Moon, Sun, Menu, X } from "lucide-react";
-import { useTheme } from "next-themes";
+import { Menu, X, Download } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,6 +27,7 @@ const Header = () => {
     { name: "Skills", href: "skills" },
     { name: "Projects", href: "projects" },
     { name: "Experience", href: "experience" },
+    { name: "Blog", href: "blog" },
     { name: "Contact", href: "contact" }
   ];
 
@@ -55,7 +55,7 @@ const Header = () => {
           </button>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8" role="navigation" aria-label="Main navigation">
+          <nav className="hidden md:flex items-center space-x-6" role="navigation" aria-label="Main navigation">
             {navItems.map((item) => (
               <button
                 key={item.name}
@@ -67,10 +67,20 @@ const Header = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
               </button>
             ))}
+            <Button
+              variant="outline"
+              size="sm"
+              className="flex items-center gap-2 ml-4"
+              onClick={() => window.open('/resume.pdf', '_blank')}
+            >
+              <Download className="h-4 w-4" />
+              Resume
+            </Button>
+            <ThemeToggle />
           </nav>
 
           {/* Right side actions */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 md:hidden">
             {/* Availability badge */}
             <div className="hidden sm:flex items-center gap-2">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
@@ -79,25 +89,11 @@ const Header = () => {
               </Badge>
             </div>
 
-            {/* Theme toggle */}
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-              className="text-muted-foreground hover:text-primary"
-            >
-              {theme === 'dark' ? (
-                <Sun className="h-4 w-4" />
-              ) : (
-                <Moon className="h-4 w-4" />
-              )}
-            </Button>
-
             {/* Mobile menu button */}
             <Button
               variant="ghost"
               size="sm"
-              className="md:hidden text-muted-foreground hover:text-primary"
+              className="text-muted-foreground hover:text-primary"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               {isMobileMenuOpen ? (
@@ -122,11 +118,25 @@ const Header = () => {
                   {item.name}
                 </button>
               ))}
-              <div className="px-4 py-2 flex items-center gap-2">
-                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                <Badge variant="secondary" className="text-xs">
-                  Available for opportunities
-                </Badge>
+              <div className="px-4 py-2 flex flex-col gap-3">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="flex items-center gap-2 justify-center"
+                  onClick={() => window.open('/resume.pdf', '_blank')}
+                >
+                  <Download className="h-4 w-4" />
+                  Resume
+                </Button>
+                <div className="flex justify-center">
+                  <ThemeToggle />
+                </div>
+                <div className="flex items-center justify-center gap-2">
+                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                  <Badge variant="secondary" className="text-xs">
+                    Available for opportunities
+                  </Badge>
+                </div>
               </div>
             </nav>
           </div>
