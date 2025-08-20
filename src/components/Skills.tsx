@@ -8,25 +8,25 @@ const Skills = () => {
       title: "Backend Development",
       icon: Code,
       skills: ["Node.js", "Next.js", "TypeScript", "Python", "Golang", "PostgreSQL", "MongoDB", "GraphQL", "REST APIs"],
-      color: "bg-blue-500"
+      color: "hsl(var(--accent))"
     },
     {
       title: "DevOps / Cloud",
       icon: Cloud,
       skills: ["Terraform", "Kubernetes", "Docker", "Ansible", "AWS", "CI/CD", "Jenkins", "GitHub Actions", "ArgoCD"],
-      color: "bg-green-500"
+      color: "hsl(var(--primary))"
     },
     {
       title: "Cybersecurity",
       icon: Shield,
       skills: ["Kubernetes Security", "Infrastructure Security", "RBAC", "Trivy", "Falco", "Compliance", "Security Automation", "Penetration Testing"],
-      color: "bg-red-500"
+      color: "hsl(var(--destructive))"
     },
     {
-      title: "Tools & Technologies",
+      title: "Infrastructure as Code",
       icon: Server,
-      skills: ["Git", "Linux", "Nginx", "Redis", "Prometheus", "Grafana", "ELK Stack", "Vault", "Istio"],
-      color: "bg-purple-500"
+      skills: ["Terraform", "Ansible", "CloudFormation", "Pulumi", "Helm", "Kustomize", "Vault", "Istio"],
+      color: "hsl(220 70% 50%)"
     }
   ];
 
@@ -46,7 +46,7 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {skillCategories.map((category, index) => (
             <Card 
               key={index} 

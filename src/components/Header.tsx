@@ -80,7 +80,7 @@ const Header = () => {
           </nav>
 
           {/* Right side actions */}
-          <div className="flex items-center gap-4 md:hidden">
+          <div className="flex items-center gap-3 md:hidden">
             {/* Availability badge */}
             <div className="hidden sm:flex items-center gap-2">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
@@ -88,6 +88,9 @@ const Header = () => {
                 Available
               </Badge>
             </div>
+            
+            {/* Theme toggle - always visible on mobile */}
+            <ThemeToggle />
 
             {/* Mobile menu button */}
             <Button
@@ -128,9 +131,6 @@ const Header = () => {
                   <Download className="h-4 w-4" />
                   Resume
                 </Button>
-                <div className="flex justify-center">
-                  <ThemeToggle />
-                </div>
                 <div className="flex items-center justify-center gap-2">
                   <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
                   <Badge variant="secondary" className="text-xs">

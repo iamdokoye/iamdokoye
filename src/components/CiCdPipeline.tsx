@@ -180,15 +180,15 @@ const CiCdPipeline = () => {
         </div>
 
         {/* Pipeline Visualization */}
-        <div className="mb-16">
-          <div className="flex flex-col lg:flex-row gap-4 justify-center items-center">
+        <div className="mb-16 overflow-x-auto">
+          <div className="flex flex-col lg:flex-row gap-4 justify-center items-center min-w-max px-4">
             {pipelineSteps.map((step, index) => (
               <TooltipProvider key={step.id}>
                 <div className="flex flex-col lg:flex-row items-center">
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <Card 
-                        className={`w-full lg:w-64 cursor-pointer transition-all duration-300 ${
+                        className={`w-full lg:w-56 xl:w-64 cursor-pointer transition-all duration-300 flex-shrink-0 ${
                           getStepStatus(index) === "running" ? "ring-2 ring-blue-500/50 shadow-strong" :
                           getStepStatus(index) === "completed" ? "ring-2 ring-green-500/50" :
                           "border-border/50"
