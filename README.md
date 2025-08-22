@@ -1,73 +1,39 @@
-# Welcome to your Lovable project
+<h1 align="center">Hello, I'm Daniel Okoye! 👋🏾</h1>
 
-## Project info
+## 🛠 About Me
+- 🏆 **Cybersecurity & DevSecOps Engineer**
+- ⚡ Passionate about **security automation, cloud security, DevOps, and infrastructure security.**
+- 🛠 Experienced in **Python, Golang, Terraform, Kubernetes, AWS, Ansible, and CI/CD Security.**
+- 🚀 Currently building **secure infrastructure, open-source cybersecurity projects, and learning advanced cloud security.**
+- 🎯 **Goal:** To integrate **automation, security, and infrastructure** into a single workflow.
 
-**URL**: https://lovable.dev/projects/8925f3ca-71d3-4f39-a79f-832f2218aca4
+## 🚀 GitHub Stats & Activity
 
-## How can I edit this code?
+### 📊 GitHub Overview
+  
+  ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=iamdokoye&show_icons=true&theme=transparent) 
 
-There are several ways of editing your application.
+### 🚀 Most Used Languages
 
-**Use Lovable**
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=iamdokoye&layout=compact&theme=transparent)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/8925f3ca-71d3-4f39-a79f-832f2218aca4) and start prompting.
+## 🛠 Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Cloud Platforms:** AWS, Azure, GCP, Linode  
+- **CI/CD Tools:** Jenkins, GitLab, GitHub Actions, Docker Swarm  
+- **Containers & Orchestration:** Docker, Kubernetes, Helm  
+- **Infrastructure as Code:** Terraform, CloudFormation, Ansible  
+- **Security & Compliance:** DevSecOps, Infrastructure security, IAM, Security Automation  
+- **Monitoring & Logging:** Prometheus, Grafana, ELK Stack, Datadog  
+- **Version Control:** Git, GitHub  
+- **Scripting & Programming:** Python, Bash, PowerShell, Golang, JavaScript
+- **Networking & Security:** VPN, Firewalls, Zero Trust Architecture
 
-**Use your preferred IDE**
+## 🔗 Connect with Me
+📫 **How to reach me:**
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/iamdokoye)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/iamdokoye)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+❤️ _I'm currently working on personal projects, cloud security solutions, and most importantly, myself._
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/8925f3ca-71d3-4f39-a79f-832f2218aca4) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+🚀 **I’m always open to collaborations and learning new things! Let’s connect and build something amazing together.**
