@@ -13,7 +13,8 @@
     "type-check": "tsc --noEmit",
     "test": "jest",
     "test:ci": "npm test -- --coverage --watchAll=false",
-    "audit:check": "npm audit --audit-level=moderate",
+    "audit:check": "audit-ci --moderate",
+    "audit:fix": "npm audit fix --force",
     "security:local": "npm run lint && npm run type-check && npm run audit:check",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
@@ -76,6 +77,7 @@
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react-swc": "^3.11.0",
+    "audit-ci": "^7.1.0",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.32.0",
     "eslint-plugin-react-hooks": "^5.2.0",

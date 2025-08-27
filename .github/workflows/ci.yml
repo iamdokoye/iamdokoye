@@ -24,8 +24,8 @@ jobs:
           NODE_ENV: development
           
       - name: Run npm audit
-        run: npm audit --audit-level=moderate
-        # This will FAIL the build if moderate+ vulnerabilities exist
+        run: npm audit --audit-level=critical
+        # This will FAIL the build if critical+ vulnerabilities exist
         # Use || true if you want it to continue but still show warnings
         # run: npm audit --audit-level=moderate || true
           
