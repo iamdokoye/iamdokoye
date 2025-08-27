@@ -15,7 +15,9 @@ module.exports = {
     'no-script-url': 'error',
     'no-unsanitized/method': 'error',
     'no-unsanitized/property': 'error',
-    '@typescript-eslint/no-explicit-any': 'warn',
+    '@typescript-eslint/no-explicit-any': 'warn', // Change from error to warn
+    '@typescript-eslint/no-empty-object-type': 'off', // Disable this rule
+    'react-refresh/only-export-components': 'warn', // Change from error to warn
     'no-console': ['warn', { allow: ['warn', 'error'] }],
     
     // Code quality

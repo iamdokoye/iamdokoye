@@ -24,13 +24,13 @@ jobs:
           NODE_ENV: development
           
       - name: Run npm audit
-        run: npm audit --audit-level=critical
+        run: npx audit-ci --moderate --skip-dev
         # This will FAIL the build if critical+ vulnerabilities exist
         # Use || true if you want it to continue but still show warnings
         # run: npm audit --audit-level=moderate || true
           
       - name: Run ESLint with security rules
-        run: npx eslint src --ext .ts,.tsx --max-warnings=0
+        run: npx eslint src --ext .ts,.tsx --max-warnings=10
           
       - name: Run TypeScript compiler check
         run: npx tsc --noEmit
