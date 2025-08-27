@@ -16,7 +16,7 @@ module.exports = {
     'no-unsanitized/method': 'error',
     'no-unsanitized/property': 'error',
     '@typescript-eslint/no-explicit-any': 'warn', // Change from error to warn
-    '@typescript-eslint/no-empty-object-type': 'off', // Disable this rule
+    '@typescript-eslint/no-empty-object-type': 'warn', // Change from off to warn
     'react-refresh/only-export-components': 'warn', // Change from error to warn
     'no-console': ['warn', { allow: ['warn', 'error'] }],
     
@@ -32,7 +32,8 @@ module.exports = {
     {
       files: ['**/*.test.ts', '**/*.test.tsx'],
       rules: {
-        'no-console': 'off'
+        'no-console': 'off',
+        '@typescript-eslint/no-explicit-any': 'off' // Allow any in tests too
       }
     }
   ]
