@@ -1,9 +1,9 @@
 <h1 align="center">Hello, I'm Daniel Okoye! 👋🏾</h1>
 
 ## 🛠 About Me
-- 🏆 **Cybersecurity & DevSecOps Engineer**
-- ⚡ Passionate about **security automation, cloud security, DevOps, and infrastructure security.**
-- 🛠 Experienced in **Python, Golang, Terraform, Kubernetes, AWS, Ansible, and CI/CD Security.**
+- 🏆 **Backend & Dev(Sec)Ops Engineer**
+- ⚡ Passionate about **Backend Development Security Automation, Cloud Security, DevOps, and Infrastructure Security.**
+- 🛠 Experienced in **TypeScript Python, Golang, Terraform, Kubernetes, AWS, Ansible, and CI/CD Security.**
 - 🚀 Currently building **secure infrastructure, open-source cybersecurity projects, and learning advanced cloud security.**
 - 🎯 **Goal:** To integrate **automation, security, and infrastructure** into a single workflow.
 
