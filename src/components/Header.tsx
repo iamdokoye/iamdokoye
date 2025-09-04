@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Menu, X, Download } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
+import resumeUrl from "./assets/Resume.pdf?url";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
